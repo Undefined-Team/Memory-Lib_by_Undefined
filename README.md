@@ -1,2 +1,2 @@
-# Memory-Lib_by_Undefined
+# Memory Lib by Undefined
 Simple C lib for memory

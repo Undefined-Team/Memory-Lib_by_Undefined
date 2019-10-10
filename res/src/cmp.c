@@ -1,6 +1,6 @@
 #include "ud_memory.h"
 
-int        ud_mem_cmp(void* dst, void *src, size_t len)
+int        ud_mem_cmp(void *dst, void *src, size_t len)
 {
     char *dstc = (char*)dst;
     char *srcc = (char*)src;

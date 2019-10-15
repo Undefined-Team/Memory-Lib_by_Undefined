@@ -9,15 +9,17 @@ void        ud_mem_cpy(void *dst, void *src, size_t len)
 
 void        ud_mem_cpy_rs(void *dst, void **src, size_t len)
 {
+    char *dstc = (char*)dst;
     char *srcc = *(char**)src;
-	while (len-- > 0) *dst++ = *srcc++;
+	while (len-- > 0) *dstc++ = *srcc++;
     *src = srcc;
 }
 
 void        ud_mem_cpy_rd(void **dst, void *src, size_t len)
 {
     char *dstc = *(char**)dst;
-	while (len-- > 0) *dstc++ = *src++;
+    char *srcc = (char*)src;
+	while (len-- > 0) *dstc++ = *srcc++;
     *dst = dstc;
 }
 

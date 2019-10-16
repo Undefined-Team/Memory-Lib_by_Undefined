@@ -7,7 +7,7 @@ void        ud_mem_cpy(void *dst, void *src, size_t len)
 	while (len-- > 0) *dstc++ = *srcc++;
 }
 
-void        ud_mem_cpy_rs(void *dst, void **src, size_t len)
+void        ud_mem_cpy_rs_ctr(void *dst, void **src, size_t len)
 {
     char *dstc = (char*)dst;
     char *srcc = *(char**)src;
@@ -15,7 +15,7 @@ void        ud_mem_cpy_rs(void *dst, void **src, size_t len)
     *src = srcc;
 }
 
-void        ud_mem_cpy_rd(void **dst, void *src, size_t len)
+void        ud_mem_cpy_rd_ctr(void **dst, void *src, size_t len)
 {
     char *dstc = *(char**)dst;
     char *srcc = (char*)src;
@@ -23,7 +23,7 @@ void        ud_mem_cpy_rd(void **dst, void *src, size_t len)
     *dst = dstc;
 }
 
-void        ud_mem_cpy_rds(void **dst, void **src, size_t len)
+void        ud_mem_cpy_rds_ctr(void **dst, void **src, size_t len)
 {
     char *dstc = *(char**)dst;
     char *srcc = *(char**)src;

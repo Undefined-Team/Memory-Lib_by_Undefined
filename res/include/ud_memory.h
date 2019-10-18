@@ -5,9 +5,9 @@
 #include <stdlib.h>
 
 // Macro
-# define ud_mem_cpy_rs(dst, src, len)   ud_mem_cpy_rs_ctr(dst, (void**)&(src), len)
-# define ud_mem_cpy_rd(dst, src, len)   ud_mem_cpy_rd_ctr((void**)&(dst), src, len)
-# define ud_mem_cpy_rds(dst, src, len)  ud_mem_cpy_rd_ctr((void**)&(dst), (void**)&(src), len)
+# define ud_mem_cpy_rs(dst, src, len)   ud_mem_cpy_rs_ctr(dst, (void**)&src, len)
+# define ud_mem_cpy_rd(dst, src, len)   ud_mem_cpy_rd_ctr((void**)&dst, src, len)
+# define ud_mem_cpy_rds(dst, src, len)  ud_mem_cpy_rds_ctr((void**)&dst, (void**)&src, len)
 
 // Structures
 
